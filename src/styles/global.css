@@ -1,0 +1,19 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.sticky-footer-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.sticky-footer-grower {
+  flex: 1;
+}
+
+.spaced-y > * {
+  margin-bottom: 1.5rem;
+}
