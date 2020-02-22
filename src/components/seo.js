@@ -28,12 +28,14 @@ function SEO({ description, lang, meta, title }) {
   const metaDescription = description || site.siteMetadata.description
 
   return (
+    // Removed titleTemplate={`%s | ${site.siteMetadata.title}`} prop because for now I just want the
+    // webpage title to be the title of the site only.
+    // See: https://github.com/nfl/react-helmet/blob/b79d30ff44c7ff3c175c31059076e5e549a1b402/src/HelmetUtils.js#L27
     <Helmet
       htmlAttributes={{
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,

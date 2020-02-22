@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import SEO from "../components/seo"
 import headshot from "../images/kevin-elliott.png"
@@ -9,9 +9,9 @@ import linkedin from "../images/linkedin-logo.png"
 import twitter from "../images/twitter-logo.png"
 
 
-export default () => (
+export default ({ data }) => (
   <div>
-    <SEO />
+    <SEO title={data.site.siteMetadata.title} />
     <div className="sticky-footer-container py-8 lg:py-12 px-6 md:px-16 lg:px-24 font-sans text-black leading-tight antialiased">
       <header>
         <div className="flex md:block lg:flex items-center">
@@ -97,3 +97,13 @@ export default () => (
     </div>
   </div>
 )
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
