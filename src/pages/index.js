@@ -41,17 +41,17 @@ export default ({ data }) => (
             <div className="flex">
               <div>
                 <ExternalLink url="https://github.com/remnantkevin">
-                  <FaGithub className="h-5 w-5 hover-teal-600" />
+                  <FaGithub className="h-6 w-6 hover-teal-600" />
                 </ExternalLink>
               </div>
               <div className="ml-2">
                 <ExternalLink url="https://www.linkedin.com/in/kevin-elliott">
-                  <FaLinkedin className="h-5 w-5 hover-teal-600" />
+                  <FaLinkedin className="h-6 w-6 hover-teal-600" />
                 </ExternalLink>
               </div>
               <div className="ml-2">
                 <ExternalLink url="https://twitter.com/KevinElliott19">
-                  <FaTwitter className="h-5 w-5 hover-teal-600" />
+                  <FaTwitter className="h-6 w-6 hover-teal-600" />
                 </ExternalLink>
               </div>
             </div>
@@ -61,27 +61,27 @@ export default ({ data }) => (
       </header>
       <div className="sticky-footer-grower lg:pl-32 mt-8">
         <div className="max-w-2xl">
-          <div className="text-lg text-gray-900 leading-normal spaced-y">
+          <div className="text-normal text-gray-900 leading-normal spaced-y">
             <p>
               Hi, I'm Kevin, a junior software developer from Cape Town, South Africa.
-              I am excited by the opportunities and challenges web development provides,
-              and passionate about building efficient, well-designed software.
             </p>
             <p>
               Since early 2019, I've been working on a monolithic Ruby on Rails app at
               {" "}<ExternalLinkDecorated url="https://www.ixperience.co" text="iXperience"></ExternalLinkDecorated>.
               The app houses student, admin, and community portals, and is backed by a PostgreSQL database.
-              We use RSpec, FactoryBot, and CircleCI during testing, and the app is deployed to Heroku.
+              We use RSpec, FactoryBot, and CircleCI during testing, and deploy to Heroku.
             </p>
             <p>
               Most of my contributions have been on the backend, with some opportunities to work with
               JavaScript, jQuery, and CSS on the frontend.
-              I have also been a part of significant projects such as upgrading from Rails 5.1 to 6.0, adding role-based
-              authorisation to our portals, and updating and expanding integrations with HubSpot, YouCanBook.me,
-              and a Google BigQuery data warehouse.
+              I have also been a part of more significant projects such as upgrading from Rails 5.1 to 6.0, adding role-based
+              authorisation to our portals, updating and expanding integrations with HubSpot and YouCanBook.me,
+              and working quite extensively on a Google BigQuery data warehouse.
             </p>
             <p>
-              To grow and expand my skill set I am currently taking
+              I am excited by the opportunities and challenges web development provides,
+              and am passionate about building efficient, well-designed software.
+              In order to grow my knowledge and skill set I am currently taking
               {" "}<ExternalLinkDecorated url="https://acad.link/js" text="JavaScript"></ExternalLinkDecorated>{" "}
               and
               {" "}<ExternalLinkDecorated url="https://acad.link/reactjs" text="React"></ExternalLinkDecorated>{" "}
@@ -99,7 +99,7 @@ export default ({ data }) => (
           </div>
         </div>
       </div>
-      <footer className="lg:pl-32 mt-6 text-gray-700">
+      <footer className="lg:pl-32 mt-2 text-gray-700">
         Built using
         {" "}<ExternalLinkDecorated url="https://www.gatsbyjs.org" text="GatsbyJS"></ExternalLinkDecorated>{" "}
         and
