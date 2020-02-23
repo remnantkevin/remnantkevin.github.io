@@ -40,7 +40,7 @@ export default ({ data }) => (
             
             <div className="flex">
               <div>
-                <ExternalLink url="https://github.com/remnantkevin" cssClasses="hover:hidden">
+                <ExternalLink url="https://github.com/remnantkevin">
                   <FaGithub className="h-5 w-5 hover-teal-600" />
                 </ExternalLink>
               </div>
