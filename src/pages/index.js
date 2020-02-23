@@ -1,12 +1,19 @@
+// React
 import React from "react"
 
+// Gatsby
 import { Link, graphql } from "gatsby"
 
+// External packages and components
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
+
+// Internal Components
 import SEO from "../components/seo"
+import ExternalLink from "../components/external-link"
+import ExternalLinkDecorated from "../components/external-link-decorated"
+
+// Internal other
 import headshot from "../images/kevin-elliott.png"
-import github from "../images/github-logo.png"
-import linkedin from "../images/linkedin-logo.png"
-import twitter from "../images/twitter-logo.png"
 
 
 export default ({ data }) => (
@@ -23,7 +30,7 @@ export default ({ data }) => (
           <div className="flex flex-grow justify-between max-w-2xl">
 
             <div>
-              <Link className="block text-black no-underline font-bold text-xl lg:text-3xl font-extrabold leading-none lg:leading-tight" to="/">
+              <Link className="block text-black no-underline font-bold text-xl lg:text-3xl font-extrabold leading-none lg:leading-tight hover:text-teal-600" to="/">
                 Kevin Elliott
               </Link>
               <div className="mt-3 lg:mt-2 uppercase tracking-wide text-xs text-gray-600 font-semibold">
@@ -31,21 +38,21 @@ export default ({ data }) => (
               </div>
             </div>
             
-            <div className="flex grayscale">
+            <div className="flex">
               <div>
-                <a href="https://github.com/remnantkevin" target="_blank" rel="noopener noreferrer">
-                  <img src={github} alt="github logo" className="h-5 w-5"  />
-                </a>
+                <ExternalLink url="https://github.com/remnantkevin" cssClasses="hover:hidden">
+                  <FaGithub className="h-5 w-5 hover-teal-600" />
+                </ExternalLink>
               </div>
               <div className="ml-2">
-                <a href="https://www.linkedin.com/in/kevin-elliott" target="_blank" rel="noopener noreferrer">
-                  <img src={linkedin} alt="linkedin logo" className="h-5 w-5" />
-                </a>
+                <ExternalLink url="https://www.linkedin.com/in/kevin-elliott">
+                  <FaLinkedin className="h-5 w-5 hover-teal-600" />
+                </ExternalLink>
               </div>
               <div className="ml-2">
-                <a href="https://twitter.com/KevinElliott19" target="_blank" rel="noopener noreferrer">
-                  <img src={twitter} alt="twitter logo" className="h-5 w-5"  />
-                </a>
+                <ExternalLink url="https://twitter.com/KevinElliott19">
+                  <FaTwitter className="h-5 w-5 hover-teal-600" />
+                </ExternalLink>
               </div>
             </div>
 
@@ -54,13 +61,15 @@ export default ({ data }) => (
       </header>
       <div className="sticky-footer-grower lg:pl-32 mt-8">
         <div className="max-w-2xl">
-          <div className="text-lg text-gray-darkest leading-normal spaced-y">
+          <div className="text-lg text-gray-900 leading-normal spaced-y">
             <p>
               Hi, I'm Kevin, a junior software developer from Cape Town, South Africa.
+              I am excited by the opportunities and challenges web development provides,
+              and passionate about building efficient, well-designed software.
             </p>
             <p>
               Since early 2019, I've been working on a monolithic Ruby on Rails app at
-              {" "}<a href="https://www.ixperience.co/" target="_blank" className="underline" rel="noopener noreferrer">iXperience</a>.
+              {" "}<ExternalLinkDecorated url="https://www.ixperience.co" text="iXperience"></ExternalLinkDecorated>.
               The app houses student, admin, and community portals, and is backed by a PostgreSQL database.
               We use RSpec, FactoryBot, and CircleCI during testing, and the app is deployed to Heroku.
             </p>
@@ -72,27 +81,29 @@ export default ({ data }) => (
               and a Google BigQuery data warehouse.
             </p>
             <p>
-              I am excited by the opportunities and challenges web development provides,
-              and passionate about building efficient, well-designed software.
               To grow and expand my skill set I am currently taking
-              {" "}<a href="https://acad.link/js" target="_blank" className="underline" rel="noopener noreferrer">JavaScript</a>{" "}
+              {" "}<ExternalLinkDecorated url="https://acad.link/js" text="JavaScript"></ExternalLinkDecorated>{" "}
               and
-              {" "}<a href="https://acad.link/reactjs" target="_blank" className="underline" rel="noopener noreferrer">React</a>{" "}
+              {" "}<ExternalLinkDecorated url="https://acad.link/reactjs" text="React"></ExternalLinkDecorated>{" "}
               courses by Academind, and reading
-              {" "}<a href="https://www.poodr.com" target="_blank" className="underline" rel="noopener noreferrer">Practical Object-Orientated Design</a>{" "}
-              by {" "}<a href="https://www.sandimetz.com" target="_blank" className="underline" rel="noopener noreferrer">Sandi Metz</a>.
+              {" "}<ExternalLinkDecorated url="https://www.poodr.com" text="Practical Object-Orientated Design"></ExternalLinkDecorated>{" "}
+              by
+              {" "}<ExternalLinkDecorated url="https://www.sandimetz.com" text="Sandi Metz"></ExternalLinkDecorated>.
             </p>
             <p>
               In mid-April 2020 I am moving to Perth, Australia and am open to, and actively seeking, new job
               opportunities.
+              Feel free to
+              {" "}<ExternalLinkDecorated url="https://twitter.com/KevinElliott19" text="contact me"></ExternalLinkDecorated>.
             </p>
           </div>
         </div>
       </div>
-      <footer className="lg:pl-32 mt-6">
-        Built using <a href="https://www.gatsbyjs.org/" target="_blank" className="underline" rel="noopener noreferrer">Gatsby</a> and
-        {" "}
-        <a href="https://tailwindcss.com/" target="_blank" className="underline" rel="noopener noreferrer">TailwindCSS</a>
+      <footer className="lg:pl-32 mt-6 text-gray-700">
+        Built using
+        {" "}<ExternalLinkDecorated url="https://www.gatsbyjs.org" text="GatsbyJS"></ExternalLinkDecorated>{" "}
+        and
+        {" "}<ExternalLinkDecorated url="https://tailwindcss.com" text="TailwindCSS"></ExternalLinkDecorated>.
       </footer>
     </div>
   </div>

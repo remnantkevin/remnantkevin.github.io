@@ -21,3 +21,7 @@
 .grayscale {
   filter: grayscale(100%);
 }
+
+.hover-teal-600:hover {
+  color: theme('colors.teal.600');
+}
