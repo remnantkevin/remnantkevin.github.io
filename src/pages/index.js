@@ -2,7 +2,7 @@
 import React from "react"
 
 // Gatsby
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 // External packages and components
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
