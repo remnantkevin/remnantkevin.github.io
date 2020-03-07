@@ -76,11 +76,9 @@ export default ({ data }) => (
             <p>
               I am excited by the opportunities and challenges web development provides,
               and am passionate about building efficient, well-designed software.
-              In order to grow my knowledge and skill set I am currently taking
-              {" "}<ExternalLinkDecorated url="https://acad.link/js" text="JavaScript"></ExternalLinkDecorated>{" "}
-              and
+              In order to grow my knowledge and skill set I am currently taking a
               {" "}<ExternalLinkDecorated url="https://acad.link/reactjs" text="React"></ExternalLinkDecorated>{" "}
-              courses by Academind, and reading
+              course by Academind, and reading
               {" "}<ExternalLinkDecorated url="https://www.poodr.com" text="Practical Object-Orientated Design"></ExternalLinkDecorated>{" "}
               by
               {" "}<ExternalLinkDecorated url="https://www.sandimetz.com" text="Sandi Metz"></ExternalLinkDecorated>.
