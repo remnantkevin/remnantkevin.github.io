@@ -19,43 +19,38 @@ import headshot from "../images/kevin-elliott.png"
 export default ({ data }) => (
   <div>
     <SEO title={data.site.siteMetadata.title} />
-    <div className="sticky-footer-container py-8 lg:py-12 px-6 md:px-16 lg:px-24 font-sans text-black leading-tight antialiased">
-      <header>
-        <div className="flex md:block lg:flex items-center">
-          <div className="mb-0 md:mb-4 lg:mb-0 flex flex-no-shrink pr-4 md:pr-6 lg:pr-12">
-            <Link className="no-underline" to="/">
-              <img src={headshot} alt="headshot" className="h-10 w-10 md:h-12 md:w-12 lg:h-20 lg:w-20 rounded-full" />
-            </Link>
+    <div className="sticky-footer-container py-8 lg:py-12 px-6 md:px-16 lg:px-24 font-sans text-black">
+      <header class="lg:pl-32">
+        <div class="flex justify-center max-w-2xl">
+           <img src={headshot} alt="headshot" className="h-10 w-10 md:h-12 md:w-12 lg:h-20 lg:w-20 rounded-full" />
+        </div>
+
+        <div className="flex justify-between max-w-2xl mt-8">
+          <div>
+            <div className="text-black font-bold text-xl lg:text-3xl font-extrabold leading-none lg:leading-tight">
+              Kevin Elliott
+            </div>
+            <div className="mt-3 lg:mt-2 uppercase tracking-wide text-xs text-gray-600 font-semibold">
+              Software developer
+            </div>
           </div>
-          <div className="flex flex-grow justify-between max-w-2xl">
 
+          <div className="flex">
             <div>
-              <Link className="block text-black no-underline font-bold text-xl lg:text-3xl font-extrabold leading-none lg:leading-tight hover:text-teal-600" to="/">
-                Kevin Elliott
-              </Link>
-              <div className="mt-3 lg:mt-2 uppercase tracking-wide text-xs text-gray-600 font-semibold">
-                Software developer
-              </div>
+              <ExternalLink url="https://github.com/remnantkevin">
+                <FaGithub className="h-6 w-6 hover-teal-600" />
+              </ExternalLink>
             </div>
-            
-            <div className="flex">
-              <div>
-                <ExternalLink url="https://github.com/remnantkevin">
-                  <FaGithub className="h-6 w-6 hover-teal-600" />
-                </ExternalLink>
-              </div>
-              <div className="ml-2">
-                <ExternalLink url="https://www.linkedin.com/in/kevin-elliott">
-                  <FaLinkedin className="h-6 w-6 hover-teal-600" />
-                </ExternalLink>
-              </div>
-              <div className="ml-2">
-                <ExternalLink url="https://twitter.com/KevinElliott19">
-                  <FaTwitter className="h-6 w-6 hover-teal-600" />
-                </ExternalLink>
-              </div>
+            <div className="ml-2">
+              <ExternalLink url="https://www.linkedin.com/in/kevin-elliott">
+                <FaLinkedin className="h-6 w-6 hover-teal-600" />
+              </ExternalLink>
             </div>
-
+            <div className="ml-2">
+              <ExternalLink url="https://twitter.com/KevinElliott19">
+                <FaTwitter className="h-6 w-6 hover-teal-600" />
+              </ExternalLink>
+            </div>
           </div>
         </div>
       </header>
