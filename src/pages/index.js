@@ -14,6 +14,7 @@ import ExternalLinkDecorated from "../components/external-link-decorated"
 
 // Internal other
 import headshot from "../images/kevin-elliott.png"
+import cv from "../docs/Kevin-Elliott-CV-7-March-2020.pdf"
 
 
 export default ({ data }) => (
@@ -88,6 +89,8 @@ export default ({ data }) => (
               opportunities.
               Feel free to
               {" "}<ExternalLinkDecorated url="https://twitter.com/KevinElliott19" text="contact me"></ExternalLinkDecorated>.
+              My CV can be found
+              {" "}<ExternalLinkDecorated url={cv} text="here"></ExternalLinkDecorated>.
             </p>
           </div>
         </div>
