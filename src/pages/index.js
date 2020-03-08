@@ -14,7 +14,7 @@ import ExternalLinkDecorated from "../components/external-link-decorated"
 
 // Internal other
 import headshot from "../images/kevin-elliott.png"
-import cv from "../docs/Kevin-Elliott-CV-7-March-2020.pdf"
+import cv from "../docs/Kevin-Elliott-CV-March-2020.pdf"
 
 
 export default ({ data }) => (
