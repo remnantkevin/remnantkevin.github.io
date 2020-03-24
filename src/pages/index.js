@@ -59,18 +59,20 @@ export default ({ data }) => (
         <div className="max-w-2xl">
           <div className="text-normal text-gray-900 leading-normal spaced-y">
             <p>
-              Hi, I'm Kevin, a junior software developer from Cape Town, South Africa.
+              Hi, I'm Kevin, a junior software developer.
+              In March 2020 I moved from Cape Town, South Africa to Perth, Australia.
+              I am currently seeking new software development job opportunities.
             </p>
             <p>
-              Since early 2019, I've been working on a monolithic Ruby on Rails app at
+              From early 2019 to March 2020, I worked on a monolithic Ruby on Rails app at
               {" "}<ExternalLinkDecorated url="https://www.ixperience.co" text="iXperience"></ExternalLinkDecorated>.
               The app houses student, admin, and community portals, and is backed by a PostgreSQL database.
-              We use RSpec, FactoryBot, and CircleCI during testing, and deploy to Heroku.
+              RSpec, FactoryBot, and CircleCI were used during testing, and the app was deployed to Heroku.
             </p>
             <p>
-              Most of my contributions have been on the backend, with some opportunities to work with
+              Most of my contributions were on the backend, with some opportunities to work with
               JavaScript, jQuery, and CSS on the frontend.
-              I have also been a part of more significant projects such as upgrading from Rails 5.1 to 6.0, adding role-based
+              I was also a part of more significant projects such as upgrading from Rails 5.1 to 6.0, adding role-based
               authorisation to our portals, updating and expanding integrations with HubSpot and YouCanBook.me,
               and working quite extensively on a Google BigQuery data warehouse.
             </p>
@@ -85,11 +87,9 @@ export default ({ data }) => (
               {" "}<ExternalLinkDecorated url="https://www.sandimetz.com" text="Sandi Metz"></ExternalLinkDecorated>.
             </p>
             <p>
-              In mid-April 2020 I am moving to Perth, Australia and am open to, and actively seeking, new job
-              opportunities.
-              Feel free to
-              {" "}<ExternalLinkDecorated url="https://twitter.com/KevinElliott19" text="contact me"></ExternalLinkDecorated>.
-              My CV can be found
+              I can be contacted
+              {" "}<ExternalLinkDecorated url="https://twitter.com/KevinElliott19" text="here"></ExternalLinkDecorated>,
+              and my CV can be found
               {" "}<ExternalLinkDecorated url={cv} text="here"></ExternalLinkDecorated>.
             </p>
           </div>
